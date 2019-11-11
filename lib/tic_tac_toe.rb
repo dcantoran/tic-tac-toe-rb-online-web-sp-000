@@ -124,7 +124,7 @@ end
 def play(board)
   input = gets.strip
   # entry = input_to_index(input)
-  until play(board) == over?(board)
+  if over?(board)
     turn(board)
     play(board)
   end 
@@ -136,22 +136,3 @@ def play(board)
   end
   
 end 
-
-# def play(board)
-#   if !over?(board)
-#     turn(board)
-#     play(board)
-#   end
-#   if won?(board)
-#     winner = winner(board)
-#     puts "Congratulations #{winner}!"
-#   end
-#   if draw?(board)
-#     puts "Cat's Game!"
-#   end
-# end
-
-
-
-
-

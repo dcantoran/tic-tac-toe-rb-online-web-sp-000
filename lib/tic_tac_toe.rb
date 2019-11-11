@@ -122,7 +122,7 @@ def winner(board)
 end
 
 def play(board)
-  input = gets.strip
+  # input = gets.strip
   # entry = input_to_index(input)
   if !over?(board)
     turn(board)
@@ -136,3 +136,5 @@ def play(board)
   end
   
 end 
+
+

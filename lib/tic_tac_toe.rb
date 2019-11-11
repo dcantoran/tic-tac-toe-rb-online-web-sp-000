@@ -124,7 +124,7 @@ end
 def play(board)
   input = gets.strip
   # entry = input_to_index(input)
-  if over?(board)
+  if !over?(board)
     turn(board)
     play(board)
   end 
